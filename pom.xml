@@ -13,6 +13,12 @@
         <name>Soot OSS</name>
         <url>https://soot-oss.org/</url>
     </organization>
+    <repositories>
+        <repository>
+            <id>eclipse-releases</id>
+            <url>https://repo.eclipse.org/content/groups/releases/</url>
+        </repository>
+    </repositories>
     <licenses>
         <license>
             <name>GNU LESSER GENERAL PUBLIC LICENSE 2.1</name>
@@ -432,6 +438,17 @@
         </plugins>
     </build>
     <dependencies>
+        <dependency>
+            <groupId>org.pcollections</groupId>
+            <artifactId>pcollections</artifactId>
+            <version>3.1.4</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.eclipse.viatra/viatra-query-runtime -->
+        <dependency>
+            <groupId>org.eclipse.viatra</groupId>
+            <artifactId>viatra-query-runtime</artifactId>
+            <version>2.4.0</version>
+        </dependency>
         <!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
         <dependency>
             <groupId>commons-io</groupId>
